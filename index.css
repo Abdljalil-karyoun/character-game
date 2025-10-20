@@ -1,0 +1,40 @@
+*{}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    
+    width: 90%;
+}
+header{
+    display: flex;
+}
+#part_1{
+    display: flex;
+    width: ;
+    justify-content: space-between;
+}
+#typing_area{
+    height: 160px;
+    border-radius: 10px;
+    background-color: ;
+    
+}
+#container_of_conter_result{
+    display: flex;
+
+}
+
+#container_of_characters_static > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#character_limite_input{
+    width: 30px;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: 0px 0px 15px rgb(135, 20, 222);
+}

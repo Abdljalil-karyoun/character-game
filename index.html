@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="text-align: center; background-color: rgba(21, 21, 29); color: white;">
+    <header style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+            <h5>Character Counter</h5>
+        </div>
+        
+        <img src="http://127.0.0.1:5500/in%20class/to%20do%20list/wb_sunny_24dp_FFFFFF_FILL0_wght100_GRAD0_opsz24.svg" id="mode_button" alt="darck mode">
+    </header >
+
+    <h1>Analyze your text 
+        <br>
+        in real-time
+    </h1>
+    <h4 style="color: red; text-align: start;" id="max_character_alert" ></h4>
+    <textarea style="background-color:rgba(34, 34, 44);color: white;box-shadow:0px 0px 10px white;"  id="typing_area" placeholder="start typing here... (or past your text)"></textarea>
+    
+    <div style="text-align: start; display: flex; justify-content: space-between; align-items: baseline; ">
+        <div style="text-align: start; display: flex; gap: 30px;">
+            <div>
+                <input type="checkbox" id="exclude_space">
+                <label for="exclude_space">exclude space</label>
+            </div>
+            <div>
+                <input type="checkbox" id="character_limite">
+                <label for="">set character limite</label>
+                <input type="number" style="display: none; min-width: 40px" id="character_limite_input">
+            </div>
+        </div>
+        <p>Approx,reading time; 1 minutes</p>
+    </div>
+    
+    <div id="container_of_conter_result" style="display: flex; justify-content: space-between;">
+        <div style="background-color: rgba(211, 161, 250); width: 25%; border-radius: 15px; padding-top: 10px;" id="total_character" class="conter_result">
+            <span style="font-weight: bold;font-size: 30px;">00</span>
+            <h3>Total character</h3>
+        </div>
+        <div style="background-color: rgba(255, 159, 0); width: 25%; border-radius: 15px; padding-top: 10px;" id="word_count" class="conter_result">
+            <span style="font-weight: bold;font-size: 30px;">00</span>
+            <h3>Word count</h3>
+        </div>
+        <div style="background-color: rgba(255, 129, 89);  width: 25%; border-radius: 15px; padding-top: 10px;" id="sentence_count" class="conter_result">
+            <span style="font-weight: bold;font-size: 30px;">00</span>
+            <h3>Sentence count</h3>
+        </div>
+    </div>
+
+    <h4 style="text-align: start;">Letter densitiy</h4>
+
+    <small id="no_existed_character_alert">No character found start typing to see the result</small>
+    <div id="container_of_characters_static">
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
